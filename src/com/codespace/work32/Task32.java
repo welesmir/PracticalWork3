@@ -54,7 +54,7 @@ public class Task32 {
 
         System.out.println("profit_mon : " + profit_mon + " грн.");
 
-        System.out.println("Прибыль за  : " + v_monts + " месяцев - " + (profit_mon * v_monts) + " грн.");
+        System.out.println("Прибыль за " + v_monts + " месяцев -> " + (profit_mon * v_monts) + " грн.");
 
     }
 }
