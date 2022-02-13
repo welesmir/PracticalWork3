@@ -6,9 +6,10 @@ public class Task32 {
     public static void main(String[] args) {
         int v_prc_year = 0;
         double profit_mon = 0.0;
+//        long deposit = 0;
 
 
-                Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Укажите сумму депозита (в грн.) -> ");
         long deposit = scanner.nextLong();
 
@@ -31,10 +32,8 @@ public class Task32 {
         }
 
 
-
-
-        System.out.println("сумма депозита : " + deposit + " грн.");
-        System.out.println("количесво месяцев : " + deposit + " грн.");
+//        System.out.println("сумма депозита : " + deposit + " грн.");
+//        System.out.println("количесво месяцев : " + deposit + " грн.");
 //        System.out.print("Процент годовых : " + v_prc_year + " %");
 
         if (v_prc_year != 0) {
@@ -55,6 +54,6 @@ public class Task32 {
         System.out.println("profit_mon : " + profit_mon + " грн.");
 
         System.out.println("Прибыль за " + v_monts + " месяцев -> " + (profit_mon * v_monts) + " грн.");
-
+        System.out.printf("форматирование - доход : %.2f\n", (profit_mon * v_monts));
     }
 }
